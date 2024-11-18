@@ -1,0 +1,162 @@
+h1 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 45px;
+  position:relative;
+  animation: anim1 20s linear infinite;
+}
+
+h1:hover {
+    opacity: 0%;
+}
+
+@keyframes anim1 {
+    0% {left:250%;text-shadow: 5px 5px #535050;}
+    15%{text-shadow: 5px 5px white;}
+    25%{text-shadow: 5px 5px grey;}
+    50%{text-shadow: 5px 5px grey;opacity: 10%}
+    75%{text-shadow: 5px 5px purple;opacity: 0%;}
+    85%{text-shadow: 5px 5px black;}
+    100% {left:-250%;}
+}
+
+p     {
+    text-align: center;
+    font-size: 45px;
+    font-family: "PT Sans Narrow", sans-serif;
+
+}
+
+#profil  {
+    width : 150px;
+    height: 150px;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-top: 100px;
+    border-radius: 200px;
+    opacity:30%;
+    
+    
+}
+
+#profil:hover {
+    animation: anim2 10s linear infinite ;
+}
+
+@keyframes anim2 {
+    100%{opacity: 0%}
+    
+}
+
+.p1 {
+    color: aliceblue;
+    text-shadow: 3px 3px #535050;
+}
+
+.p1:hover {
+    animation: anim2 10s linear infinite;
+}
+
+
+.myButton {
+	background-color:rgb(0, 0, 0);
+	border-radius:12px;
+	border:8px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Impact;
+	font-size:50px;
+	padding:22px 76px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #000000;
+    margin-left: 440px;
+    margin-right: 440px;
+}
+.myButton:hover {
+	background-color:aliceblue;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.card-white {
+    box-shadow:0px 10px 300px rgba(0, 0, 0, 0.1);;
+    margin: 150px;
+    padding: 50px;
+    
+}
+
+.icones-du-bas {
+    position: relative;
+    font-size: 38px;
+}
+
+body {
+    background-image: url(./Art\ Occulte.jfif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.p2 {
+    opacity: 0%;
+
+}
+
+.p2:hover {
+    color: aliceblue;
+    opacity: 100%;
+
+}
+
+@keyframes anim3 {
+    0% {text-shadow: 5px 5px #535050;color:red}
+    25% {transform: rotate(5px);}
+    50% {transform: rotate(0px);}
+    75% {transform: rotate(-5px);}
+    100%{transform: rotate(0px);}
+
+
+}
+
+.p3 {
+    animation: anim3 0.5s infinite;
+}
+
+@keyframes anim4 {
+    0% {text-shadow: 2px 2px white;}
+    15%{text-shadow: 4px 4px aliceblue;}
+    20%{text-shadow: 8px 8px aliceblue;}
+    25%{text-shadow:15px 15px aliceblue;color:lightsalmon;opacity:10%}
+    35%{rotate: 45deg;text-shadow: 20px 20px aliceblue;color: grey;opacity: 0%;}
+    40%{text-shadow: 15px 15px rgb(0, 255, 64);color:beige}
+    50%{text-shadow: 10px 10px rgb(159, 222, 24);color:white}
+    90% {rotate: 0deg;text-shadow: 2px 2px salmon;color:#000000}
+    97% {rotate: 5deg;text-shadow: 2px 2px white;}
+    98% {rotate: -5deg;text-shadow: 2px 2px rgb(153, 93, 152);opacity:100%}
+    99% {rotate: 0deg;opacity:10%}
+    100%{opacity: 0%;}
+}
+
+
+.p3:hover {
+    animation: anim4 15s ;
+}
+
+.icones-du-bas {
+    display : inline;
+    font-size: 38px;
+    padding-left:  170px ;
+    padding-right: 170px ;
+    opacity: 70%;
+    animation: anim5 5s linear infinite;
+}
+
+@keyframes anim5 {
+    0% {opacity: 20%;}
+    50% {opacity: 70%;}
+    100%{opacity:20%}
+}
